@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 2px;
+}
+body
+{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  min-width: 1250px;
+}
+
+.container{
+  width: 100%;
+  height:550px;
+  background-color:  rgba(23, 35, 85, 0.7);;
+  padding: 40px 50px 40px 40px;
+  margin-top: 30px;
+  box-shadow: 5px 15px 10px rgba(163, 38, 179, 0.288);
+  border-radius: 35px;
+}
+
+.container .content{
+  height:80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.container .content .list
+{
+ display: flex;
+ flex-direction: column;
+  position: relative; 
+ /* z-index: 12; */
+ color: rgb(42, 153, 187);
+  width:20%;  
+}
+
+.container .content .text-content
+{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  font-size: 20px;
+  text-align: justify;
+  overflow:auto;
+}
+.container .content .text-content .title
+{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.container .content .text-content p
+{
+  text-align: justify;
+}
+
+
+.container .list label
+{
+  border-radius: 10px;
+  /* background-color: rgb(176, 94, 94); */
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 32px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index: 12;
+  transition: all 0.2s linear;
+}
+.content .list label:hover
+{
+  color:rgba(44, 99, 194, 0.803);
+  /* text-shadow: 1px 3px 3px rgba(93, 0, 105, 0.463); */
+}
+
+#bi:checked ~ .list .bi,
+#h:checked ~ .list .h,
+#fm:checked ~ .list .fm,
+#fw:checked ~ .list .fw
+{
+  color: rgb(58, 156, 66);
+}
+
+.container .content .indicator
+{
+  background-color: rgba(29, 84, 148, 0.284);
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  border-radius: 90px;
+  left: 0;
+
+  transition: all 0.2s linear;
+}
+
+#bi:checked~ .list .indicator
+{
+  top: 0px;
+}
+#h:checked~ .list .indicator
+{
+  top: 60px;
+}
+#fm:checked~ .list .indicator
+{
+  top: 120px;
+}
+#fw:checked~ .list .indicator
+{
+  top: 180px;
+}
+
+.content input[type="radio"]
+{
+  display: none;
+}
+.content .text-content .text{
+  display: none;
+}
+
+.content .text-content .bI{
+  display: block;
+}
+
+
+#bi:checked ~ .text-content .bI,
+#h:checked ~ .text-content .H,
+#fm:checked ~ .text-content .fM,
+#fw:checked ~ .text-content .fW
+{
+  display: block;
+}
+
+#h:checked ~ .text-content .bI,
+#fm:checked ~ .text-content .bI,
+#fw:checked ~ .text-content .bI
+{
+  display: none;
+}
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: Cozette;
+      src: url('./assets/CozetteVector.ttf');
+    }
+    body
+    {
+    overflow: auto;
+    min-width: 1250px;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./index.css">
+  <title>Jillweb</title>
+
+</head>
+
+<body background="./assets/glitchcity.jpg" class="bg-cover bg-scroll" style="font-family: 'Cozette';">
+
+  <div class="self-center md:sticky top-1/4 h-auto w-full flex flex-col space-x-2">
+    <!-- Title -->
+    <div class="mx-auto my-auto md:space-y-8">
+
+      <div class="flex flex-row">
+        <img class=" h-14 w-14 md:h-16 md:w-16 mt-0 ml-1" src="assets/Sprite4.png">
+        <p
+          class="bg-gradient-to-r from-indigo-600 via-purple-700 to-fuchsia-600 inline-block text-transparent bg-clip-text font-bold text-5xl md:text-6xl">
+          HELLO THERE,WELCOME!</p>
+      </div>
+    </div>
+    <!--Title end-->
+    <div class="flex  md:felx-row  space-x-2">
+
+      <!-- left -->
+      <div class="w-1/3   bg-indigo-200/10 h-fit flex flex-col border-2 border-indigo-900">
+        <p
+          class="text-center  border-4 border-indigo-900 pl-2 bg-gradient-to-r from-indigo-800 via-purple-700 to-fuchsia-600 inline-block text-transparent bg-clip-text font-bold text-6xl md:text-7xl">
+          ---WANTED---</p>
+        <div class="w-full border-2 border-indigo-900"><img class=" ml-10 h-14 w-14 md:h-96 md:w-96 mt-0 "
+            src=" assets/me2.png"></div>
+      </div>
+      <!--left end-->
+
+
+      <!--middle-->
+      <div class="wrapper w-1/3 h-fit md:pt-24 pt-10 flex translate-x-2 -translate-y-5">
+        <div
+          class=" bg-indigo-900 text-wrap bg-gradient-to-r from-indigo-600 via-purple-700 to-fuchsia-600 inline-block text-transparent bg-clip-text  text-2xl md:text-2xl">
+          <header class=" bg-indigo-900 md:text-4xl font-bold border-4 border-indigo-600 text-center text-emerald-600">
+            ABOUT
+            MY WEB</header>
+          <article class="bg-indigo-900 text-emerald-500 font-medium border-4 border-indigo-600 whitespace-normal"> This website is based on the Tailwind CSS.I created it to document my CS learning,daily life, and hobby development, as well as to serve as a self-introduction (potentially for future use as a resume). I hope you enjoy it.
+------BTW I based my self-portrait on a pixel artist I really like on Twitter:Gordon Zuchhold.------
+          </article>
+        </div>
+      </div>
+      <!--middle end-->
+
+
+      <!-- right -->
+      <div class="w-1/3 md:pt-2 pt-10 flex flex-col ">
+        <div class="w-fit flex flex-col mx-auto ">
+          <!-- Title -->
+          <p class="px-3 text-2xl md:text-5xl text-emerald-600 font-bold text-end">Index:</p>
+
+          <!-- About Me -->
+          <div class="md:my-4 my-2 rounded-lg h-fit flex flex-col relative">
+            <div class="flex justify-end h-12">
+              <a class="whitespace-nowrap rounded-none mx-1 px-3 py-2 bg-emerald-300/30  hover:bg-emerald-500/20 md:text-3xl text-md font-normal text-lime-300"
+                href="./about me.html"><span>About Me</span></a>
+            </div>
+            <p class="md:text-lg text-start px-3 md:pt-2 pt-1 text-gray-300 whitespace-normal">basic
+              introduction,hobbies,etc</p>
+          </div>
+          <!-- About Me End-->
+
+          <!-- CS -->
+          <div class="md:my-1 my-1 rounded-lg h-fit flex flex-col relative">
+            <div class="flex justify-end h-12">
+              <a class="whitespace-nowrap rounded-none mx-1 px-3 py-2 bg-emerald-300/30  hover:bg-emerald-500/20 md:text-3xl text-md font-normal text-lime-300"
+                href="./CS Learning.html"><span>CS Learing</span></a>
+            </div>
+            <p class="md:text-lg text-md px-3 md:pt-1 pt-1 text-gray-300 whitespace-normal">Books,courses and projects
+            </p>
+          </div>
+          <!-- CS End -->
+
+          <!-- Contact -->
+          <div class="md:my-1 my-1 rounded-lg h-fit flex flex-col relative">
+            <div class="flex justify-end h-12">
+              <a class="whitespace-nowrap rounded-none mx-1 px-3 py-2 bg-emerald-300/30 hover:bg-emerald-500/20 md:text-3xl text-md font-normal text-lime-300"
+                href="./contact.html"><span>Contact</span></a>
+            </div>
+            <p class="md:text-lg text-md px-3 md:pt-1 pt-1 text-gray-300 whitespace-pre-wrap">links to my social media
+            </p>
+          </div>
+          <!-- Contact End -->
+
+          <!-- art work -->
+          <div class="md:my-1 my-1 rounded-lg h-fit flex flex-col relative -translate-y-6">
+            <div class="flex justify-end h-12">
+              <a class="whitespace-nowrap rounded-none mx-1 px-3 py-2 bg-emerald-300/30 md:text-3xl text-md font-normal text-lime-300"
+                href="./art work.html"><span>Art Work</span></a>
+            </div>
+            <p class="md:text-lg text-md px-3 md:pt-1 pt-1 text-gray-300 whitespace-normal">some pixel art i created</p>
+          </div>
+          <!-- art work end -->
+
+        </div>
+      </div>
+      <!-- right end -->
+
+
+    </div>
+  </div>
+  
+  <script>
+    let btns = document.querySelectorAll('a')
+    btns.forEach(btn => {
+      btn.onmousemove = (e) => {
+        let x = e.offsetX - btn.offsetLeft + 100
+        let y = e.offsetY - btn.offsetTop + 20
+
+        btn.style.setProperty('--x', x + 'px')
+        btn.style.setProperty('--y', y + 'px')
+
+        console.log(btn.offsetLeft)
+        console.log(e.pageX)
+      }
+    }
+    )
+
+  </script>
+</body>
+
+</html>

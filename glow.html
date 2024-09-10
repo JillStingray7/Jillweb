@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: Cozette;
+      src: url('./assets/CozetteVector.ttf');
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #222;
+      gap: 50px;
+      flex-direction: column;
+    }
+
+    a {
+      position: relative;
+      padding: 20px 60px;
+      background-color: rgba(45, 45, 45, 1);
+      border-radius: 50px;
+      color: #999;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: .5s;
+      overflow: hidden;
+    }
+
+    a span {
+      position: relative;
+      z-index: 1;
+    }
+
+    a:hover {
+      color: var(--clr);
+      text-shadow: 0 0 15px var(--clr), 0 0 40px var(--clr);
+    }
+
+    a::before {
+      content: '';
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(var(--clr), transparent, transparent);
+      opacity: 0;
+      transition: .5s top 0s left 0s;
+    }
+
+    a:hover::before {
+      opacity: 1;
+    }
+
+    a::after {
+      content: '';
+      background-color: rgba(45, 45, 45, .8);
+      position: absolute;
+      inset: 2px;
+      border-radius: 48px;
+    }
+  </style>
+</head>
+
+<body style="font-family: 'Cozette';">
+  <a href="#" style="--clr:rgb(0, 255, 115);"><span>BUTTON</span></a>
+  <a href="#" style="--clr:rgb(204, 0, 255);"><span>BUTTON</span></a>
+  <a href="#" style="--clr:rgb(144, 0, 255);"><span>BUTTON</span></a>
+
+
+  <script>
+    let btns = document.querySelectorAll('a')
+    btns.forEach(btn => {
+      btn.onmousemove = (e) => {
+        let x = e.pageX - btn.offsetLeft
+        let y = e.pageY - btn.offsetTop
+
+        btn.style.setProperty('--x', x + 'px')
+        btn.style.setProperty('--y', y + 'px')
+
+        console.log(btn.offsetLeft)
+        console.log(e.pageX)
+      }
+    }
+    )
+  </script>
+</body>
+
+</html>

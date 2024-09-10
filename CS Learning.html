@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>@font-face { font-family: Cozette; src: url('./assets/CozetteVector.ttf'); }</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CSlearning</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./CS Learning.css">
+</head>
+
+<body background="./assets/glitchcity.jpg" class=" bg-cover bg-scroll  flex flex-row shrink-0" style="font-family: 'Cozette';">
+    <div class="flex flex-row md:flex-col h-full w-full shrink-0">
+
+        <!-- Top-->
+        <div class="md:top-0 md:sticky  w-full md:h-auto md:w-full flex flex-col md:px-10  ml-1 md:ml-0">
+            <div class="md:ml-4 ">
+                <p class="header w-full top-0 text-emerald-600  md:text-7xl text-left"><a class="text-lime-200" href="./index.html"><-</a>CS Learning</p>
+
+            </div>
+            <div class="mx-4 my-auto md:space-y-0 space-y-0">
+
+                
+
+                <!-- row1 -->
+                <div class="flex flex-nowrap text-xs md:text-base">
+                    <!-- Computer Science -->
+                    <button onclick="filter('CSAPP','Missing Semester')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-none px-3 py-1 font-semibold bg-lime-500/20 md:m-1 m-0.5 inline-block text-lime-500">Computer Science</button>
+                    <!-- Mathematics -->
+                    <button onclick="filter('Calculus','Linear Algebra','DM')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-none px-3 py-1 font-semibold bg-lime-500/20 md:m-1 m-0.5 inline-block text-lime-500">Mathematics</button>
+                    <!-- Data Analytics -->
+                    <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-none px-3 py-1 font-semibold bg-lime-500/20 md:m-1 m-0.5 inline-block text-lime-500">Data Analytics</button>
+                    <!-- Web Dev -->
+                    <button onclick="filter('pw')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-noen px-3 py-1 font-semibold bg-lime-500/20 md:m-1 m-0.5 inline-block text-lime-500">Web Development</button>
+                    <!-- Game Dev -->
+                    <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-none px-3 py-1 font-semibold bg-lime-500/20 md:m-1 m-0.5 inline-block text-lime-500">Game Development</button>
+                </div>
+
+                <!-- row2 -->
+                <div class="flex flex-nowrap text-xs md:text-base">
+                    
+                        <!-- C -->
+                        <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">C</button>
+                        <!-- C++ -->
+                        <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">C++</button>
+                        <!-- Python -->
+                        <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">Python</button>
+                        <!-- shell -->
+                        <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">Shell</button>
+                        <!-- HTML/CSS -->
+                        <button onclick="filter('pw')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">HTML/CSS</button>
+                        <!-- JavaScript -->
+                        <button onclick="filter('pw')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">JavaScript</button>
+                        <!-- SQL -->
+                        <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">SQL</button>
+                        <!-- MySQL -->
+                         <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">MySQL</button>
+                        <!-- Golang -->
+                        <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">Golang</button>
+                        <!-- R -->
+                        <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/40 m-1 inline-block text-sky-200">R</button>
+                    
+
+
+                </div>
+
+                <!-- row3 -->
+                <div class="flex flex-wrap text-xs mt-1 md:text-base">
+                    <!-- Completed -->
+                    <button onclick="filter('Calculus','Missing Semester')" class="hover:outline hover:outline-2 hover:outline-pink-500/50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 md:m-1 m-0.5 h-fit">Completed</button>
+                    <!-- Planned -->
+                    <button onclick="filter('os','DM')" class="hover:outline hover:outline-2 hover:outline-cyan-600/60 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-400 md:m-1 m-0.5 h-fit">Planned</button>
+                    <!-- in progress -->
+                    <button onclick="filter('pw','Linear Algebra','CSAPP')" class="hover:outline hover:outline-2 hover:outline-emerald-600/60 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/20 text-emerald-400 md:m-1 m-0.5 h-fit">in progress</button>
+                </div>
+                <!-- Tags End -->
+
+            </div>
+        </div>
+        <!-- Top End -->
+
+        <!-- Bottom -->
+        
+            
+            <div class="flex md:flex-nowrap flex-row md:flex-row overflow-x-scroll md:pt-24 px-10 ml-1 pb-16">
+               
+                
+                  
+                <!-- personal web -->
+                <div id="pw" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-[#1b2845c6] rounded-lg">
+                    <div class="mx-auto my-auto">
+                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                            <div class="flex justify-between">
+                                <div>
+                                    <!-- Title -->
+                                    <p class="md:text-3xl text-lg font-light text-white">Personal Website</p>
+                                </div>
+                                <div class="flex flex-col text-xs md:text-base">
+                                    <!-- Status -->
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-400 h-fit">in progress</span>
+                                    <!-- Date -->
+                                    <span class="whitespace-nowrap rounded-full px-5 py-0 font-semibold text-slate-500 h-fit">2024</span>    
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <p class="text-sm md:text-xl text-slate-500 whitespace-pre-wrap">a practice for web dev and used for self introduction</p>
+                            <!-- Tags -->
+                            <div class="justify-start text-xs md:text-base">
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Mathematics</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- Calculus -->
+                <div id="Calculus" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-[#1b2845c6] rounded-lg">
+                    <div class="mx-auto my-auto">
+                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                            <div class="flex justify-between">
+                                <div>
+                                    <!-- Title -->
+                                    <p class="md:text-3xl text-lg font-light text-white">Calculus</p>
+                                </div>
+                                <div class="flex flex-col text-xs md:text-base">
+                                    <!-- Status -->
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 md:m-1 m-0.5 h-fit">Completed</span>
+                                    <!-- Date -->
+                                    <span class="whitespace-nowrap rounded-full px-5 py-0 font-semibold text-slate-400 h-fit">2023</span>    
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">Calculus</p>
+                            <!-- Tags -->
+                            <div class="justify-start text-xs md:text-base">
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Mathematics</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- Linear Algebra -->
+                <div id="Linear Algebra" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-[#1b2845c6] rounded-lg">
+                    <div class="mx-auto my-auto">
+                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                            <div class="flex justify-between">
+                                <div>
+                                    <!-- Title -->
+                                    <p class="md:text-3xl text-lg font-light text-white">Linear Algebra</p>
+                                    <!-- Link -->
+                                    <p class="text-slate-400 text-nowrap">
+                                        − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/syllabus/" target="_blank">course page</a>
+                                    </p>
+                                </div>
+                                <div class="flex flex-col text-xs md:text-base">
+                                    <!-- Status -->
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-400 h-fit">in progress</span>
+                                    <!-- Date -->
+                                    <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-slate-500 h-fit">2024</span>    
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">The best course for Linear Algebra</p>
+                            <!-- Tags -->
+                            <div class="justify-start text-xs md:text-base">
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Mathematics</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- CSAPP -->
+                <div id="CSAPP" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-[#1b2845c6] rounded-lg">
+                    <div class="mx-auto my-auto">
+                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                            <div class="flex justify-between">
+                                <div>
+                                    <!-- Title -->
+                                    <p class="md:text-3xl text-lg font-light text-white">CSAPP</p>
+                                    <!-- Link -->
+                                    <p class="text-slate-400 text-nowrap">
+                                        − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="http://csapp.cs.cmu.edu/" target="_blank">course page</a>
+                                    </p>
+                                </div>
+                                <div class="flex flex-col text-xs md:text-base">
+                                    <!-- Status -->
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-400 h-fit">in progress</span>
+                                    <!-- Date -->
+                                    <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-slate-500 h-fit">2024</span>    
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">The best course for computer system,may be difficult for beginner</p>
+                            <!-- Tags -->
+                            <div class="justify-start text-xs md:text-base">
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Computer Science</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- discret mathematics -->
+                <div id="DM" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-[#1b2845c6] rounded-lg">
+                    <div class="mx-auto my-auto">
+                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                            <div class="flex justify-between">
+                                <div>
+                                    <!-- Title -->
+                                    <p class="md:text-3xl text-lg font-light text-white">Discrete Mathematics and Probability Theory</p>
+                                    <!-- Link -->
+                                    <p class="text-slate-400 text-nowrap">
+                                        − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://www.eecs70.org/" target="_blank">course page</a>
+                                    </p>
+                                </div>
+                                <div class="flex flex-col text-xs md:text-base">
+                                    <!-- Status -->
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-400 md:m-1 m-0.5 h-fit">planned</span>
+                                    <!-- Date -->
+                                    <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-slate-500 h-fit">2024</span>    
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap"></p>
+                            <!-- Tags -->
+                            <div class="justify-start text-xs md:text-base">
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Mathematics</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- Missing Semester -->
+                <div id="Missing Semester" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-[#1b2845c6] rounded-lg">
+                    <div class="mx-auto my-auto">
+                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                            <div class="flex justify-between">
+                                <div>
+                                    <!-- Title -->
+                                    <p class="md:text-3xl text-lg font-light text-white">MIT-Missing-Semester</p>
+                                    <!-- Link -->
+                                    <p class="text-slate-400 text-nowrap">
+                                        − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://missing-semester-cn.github.io/" target="_blank">course page1 </a>
+                                          <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://space.bilibili.com/518734451?spm_id_from=333.337.search-card.all.click" target="_blank">course page2</a>
+                                    </p>
+                                </div>
+                                <div class="flex flex-col text-xs md:text-base">
+                                    <!-- Status -->
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 md:m-1 m-0.5 h-fit">Completed</span>
+                                    <!-- Date -->
+                                    <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-slate-500 h-fit">2024</span>    
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">a class to teach you the forgotten tools</p>
+                            <!-- Tags -->
+                            <div class="justify-start text-xs md:text-base">
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Computer Science</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- Operating System -->
+                <div id="os" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-[#1b2845c6] rounded-lg">
+                    <div class="mx-auto my-auto">
+                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                            <div class="flex justify-between">
+                                <div>
+                                    <!-- Title -->
+                                    <p class="md:text-3xl text-lg font-light text-white">Operating System</p>
+                                    <!-- Link -->
+                                    <p class="text-slate-400 text-nowrap">
+                                        − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://space.bilibili.com/202224425/channel/collectiondetail?sid=192498" target="_blank">course page</a>
+                                    </p>
+                                </div>
+                                <div class="flex flex-col text-xs md:text-base">
+                                    <!-- Status -->
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-400 md:m-1 m-0.5 h-fit">planned</span>
+                                    <!-- Date -->
+                                    <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-slate-500 h-fit">planned</span>    
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">OS from NJU</p>
+                            <!-- Tags -->
+                            <div class="justify-start text-xs md:text-base">
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Computer Science</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+         
+    
+        <!-- Bottom End -->
+
+    </div>
+
+    <script>
+        function filter(...args) {
+            var elements = document.getElementsByClassName("project");
+            for(var i = 0; i < elements.length; i++){
+                elements[i].style.display = "none";
+            }
+            
+            for (let arg of args) {
+                document.getElementById(arg).style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

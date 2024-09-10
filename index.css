@@ -1,0 +1,41 @@
+a {
+  --clr: rgb(47, 215, 126);
+  position: relative;
+  transition: .5s;
+  overflow: hidden;
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+  letter-spacing: .1em;
+}
+
+a:hover {
+  color: var(--clr);
+  text-shadow: 0 0 15px var(--clr), 0 0 40px var(--clr);
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(var(--clr), transparent, transparent);
+  opacity: 0;
+  transition: .5s top 0s left 0s;
+}
+
+a:hover::before {
+  opacity: 1;
+}
+
+a::after {
+  content: '';
+  background-color: rgba(38, 55, 46, 0.8);
+  position: absolute;
+  inset: 3px;
+}
